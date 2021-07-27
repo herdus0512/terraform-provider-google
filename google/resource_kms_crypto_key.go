@@ -118,7 +118,7 @@ See the [algorithm reference](https://cloud.google.com/kms/docs/reference/rest/v
 							Type:         schema.TypeString,
 							Optional:     true,
 							ForceNew:     true,
-							ValidateFunc: validation.StringInSlice([]string{"SOFTWARE", "HSM", ""}, false),
+							ValidateFunc: validation.StringInSlice([]string{"SOFTWARE", "HSM", "EXTERNAL", ""}, false),
 							Description:  `The protection level to use when creating a version based on this template. Default value: "SOFTWARE" Possible values: ["SOFTWARE", "HSM"]`,
 							Default:      "SOFTWARE",
 						},
